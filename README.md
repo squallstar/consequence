@@ -21,7 +21,7 @@ and then, just open http://localhost/
 heroku create appname
 
 # Set up Nodejs buildpack
-heroku config:add BUILDPACK_URL=https://github.com/mbuchetics/heroku-buildpack-nodejs-grunt.git
+heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs
 
 # Push master branch to heroku app
 git push heroku master
