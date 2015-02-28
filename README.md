@@ -1,6 +1,6 @@
 # Consequence
 
-
+[![Circle CI](https://circleci.com/gh/squallstar/consequence.svg?style=svg)](https://circleci.com/gh/squallstar/consequence)
 
 ## Development
 
