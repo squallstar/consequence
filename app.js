@@ -1,5 +1,6 @@
 // Core libs
 var express = require('express');
+var http = require('http');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -10,6 +11,12 @@ var app = express();
 
 // promises for everybody!
 require("native-promise-only");
+
+// http server
+app.server = http.createServer(app);
+
+// socket.io setup
+require('./libs/sockets-handler')(app);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
